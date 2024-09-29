@@ -5,7 +5,7 @@ from random import uniform, randint
 from math import hypot
 
 SCREEN_WIDTH, SCREEN_HEIGHT = 1365, 768
-FISH_COUNT = 50
+FISH_COUNT = 100
 NEIGHBOR_RADIUS = 100
 FOOD_RADIUS = 10
 
@@ -21,7 +21,7 @@ def load_fish_sprite(file, sprite_width, sprite_height):
     return sprite
 
 yellow_fish_sprite = load_fish_sprite('.\\assets\\dory.png', 87, 50)
-pink_fish_sprite = load_fish_sprite('.\\assets\\salmon.png', 72, 96)
+pink_fish_sprite = load_fish_sprite('.\\assets\\salmon.png', 87, 50)
 
 class Fish(pygame.sprite.Sprite):
     def __init__(self, sprite, species):
